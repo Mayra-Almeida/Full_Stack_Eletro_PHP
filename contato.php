@@ -1,31 +1,3 @@
-<?php
-$servername = "localhost";
-$username = "mayraalmeida";
-$password = "May1998@";
-$database = "fseletro";
-
-//Criando a conexão
-$conn = mysqli_connect($servername, $username, $password, $database);
-
-//Verificando a conexão
-if (!$conn) {
-    die("A conexão ao BD falhou: " . mysqli_connect_error());
-}
-
-if (isset($_POST['nome']) && isset($_POST['msg'])) {
-    $nome = $_POST['nome'];
-    $msg = $_POST['msg'];
-
-    $sql = "insert into comentarios (nome, msg) values ('$nome', '$msg')";
-    $result = $conn->query($sql);
-
-
-} else {
-}
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -66,17 +38,7 @@ if (isset($_POST['nome']) && isset($_POST['msg'])) {
         </table>
     </main>
 
-    <br><br><br>
-
-    <form method="post" action="" style="margin-left: 39%; margin-top: 0px;">
-        <h4><b>Nome:</b></h4>
-        <input type="text" name="nome" style="width: 400px;" placeholder="Digite aqui..."><br><br>
-        <h4><b>Mensagem:</b></h4><br>
-        <textarea name="msg" style="width: 400px;"></textarea>
-        <input type="submit" name="submit" value="Enviar">
-    </form>
-
-    
+    <br><br><br>    
     <br><br><br><br><br>
     <br><br><br><br><br>
     <br><br><br><br>
