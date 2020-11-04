@@ -38,10 +38,12 @@
         </table>
     </main>
 
-    <br><br><br>    
     <br><br><br><br><br>
     <br><br><br><br><br>
-    <br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br>
 
     <footer id="rodape">
         <p id="forma_pagamento">Formas de Pagamento:</p>
