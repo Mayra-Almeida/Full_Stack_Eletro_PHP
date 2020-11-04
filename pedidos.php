@@ -56,7 +56,7 @@ if (isset($_POST['nome']) && isset($_POST['prod']) && isset($_POST['quant']) && 
         <h4>Nome: </h4>
         <input type="text" name="nome" style="width: 400px;">
         <h4>Produto: </h4>
-        <select name="produto" size="1" id="produto" value="selecione"">
+        <select name="prod" size="1" id="produto" value="selecione"">
         <option value=" selecione">Selecione:</option>
             <option value="Geladeira Frost Free Brastemp Side Inverse 540 Litros">Geladeira Frost Free Brastemp Side Inverse 540 Litros</option>
             <option value="Geladeira Frost Free Brastemp Branca 375 Litros">Geladeira Frost Free Brastemp Branca 375 Litros</option>
