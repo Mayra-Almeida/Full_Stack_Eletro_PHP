@@ -13,10 +13,10 @@ preco DECIMAL(8,2),
 precofinal DECIMAL(8,2),
 imagem VARCHAR(255),
 PRIMARY KEY (idproduto)
-);
+)AUTO_INCREMENT = 100;
 
 INSERT INTO produtos (idproduto, categoria, descricao, preco, precofinal, imagem)
-VALUES ("100", "geladeira", "Geladeira Frost Free Brastemp Side Inverse 540 Litros", "6389.00", "5019.00", "imagens/produtos/geladeira_brastemp_2.png"),
+VALUES ("geladeira", "Geladeira Frost Free Brastemp Side Inverse 540 Litros", "6389.00", "5019.00", "imagens/produtos/geladeira_brastemp_2.png"),
 ("geladeira", "Geladeira Frost Free Brastemp Branca 375 Litros", "2086.00", "1910.00", "imagens/produtos/geladeira_brastemp.png"),
 ("geladeira", "Geladeira Frost Free Consul Prata 340 Litros", "2199.90", "2069.00", "imagens/produtos/geladeira_consul.png"),
 ("fogao", "Fogão 4 Bocas Consul Inox com Mesa de Vidro", "1209.90", "1129.00", "imagens/produtos/fogao_consul.png"),
@@ -40,10 +40,9 @@ primary key (id));
 
 -- CRIAÇÃO DA TABELA PEDIDOS
 
-CREATE TABLE pedidos ( 
-id_pedidos INTEGER NOT NULL, 
-nome_cliente VARCHAR(40) NOT NULL, 
-nome_produto VARCHAR(100) NOT NULL,
-quantidade INTEGER NOT NULL,
-endereco VARCHAR(200) NOT NULL,
-primary key (id_pedidos));
+CREATE TABLE pedidos (
+id INT AUTO_INCREMENT,
+nome VARCHAR(100),
+msg VARCHAR(300),
+data DATETIME DEFAULT now(),
+primary key (id));
