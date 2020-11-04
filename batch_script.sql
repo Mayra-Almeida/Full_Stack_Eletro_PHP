@@ -29,9 +29,21 @@ VALUES ("100", "geladeira", "Geladeira Frost Free Brastemp Side Inverse 540 Litr
 ("lava-roupa", "Lavadora de Roupas Brastemp 11kg com Turbo Performance Branca", "1699.00", "1214.00", "imagens/produtos/lavadora_roupas_brastemp.png"),
 ("lava-roupa", "Lavadora de Roupas Philco Inverter 12KG", "2399.00", "2179.00", "imagens/produtos/lavadora_roupas_philco.png");
 
-    CREATE TABLE comentarios (
-        id INT AUTO_INCREMENT,
-        nome VARCHAR(100),
-        msg VARCHAR(300),
-        data DATETIME DEFAULT now(),
-        primary key (id));
+-- CRIAÇÃO DA TABELA COMENTÁRIOS
+
+CREATE TABLE comentarios (
+id INT AUTO_INCREMENT,
+nome VARCHAR(100),
+msg VARCHAR(300),
+data DATETIME DEFAULT now(),
+primary key (id));
+
+-- CRIAÇÃO DA TABELA PEDIDOS
+
+CREATE TABLE pedidos ( 
+id_pedidos INTEGER NOT NULL, 
+nome_cliente VARCHAR(40) NOT NULL, 
+nome_produto VARCHAR(100) NOT NULL,
+quantidade INTEGER NOT NULL,
+endereco VARCHAR(200) NOT NULL,
+primary key (id_pedidos));
