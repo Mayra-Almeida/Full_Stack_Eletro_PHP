@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+main {
+    margin-left: 1%;
+}
+
+#forma_pagamento {
+    color: red;
+    font-weight: bold;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 30px;
+    vertical-align: 35px;
+    text-align: center;
+}
+.menu {
+    background-color: #e60000;
+}
+
+#logo {
+    width: 11.9%;
+    margin-right: 450px;
+    margin-bottom: -30px;
+    margin-top: 8px;
+    margin-left: 120px;
+}
+
+.forma_pag_img img {
+    width: 380;
+    text-align: center;
+}
+
+#rodape {
+    font-size: 14px;
+    text-align: center;
+}
+
+.grupo_lojas {
+    height: 1000px;
+    width: 79%;
+    display: inline-block;
+    color: black;
+    text-align: center;
+}
+
+.grupo_loja {
+    display: inline-block;
+    font-size: large;
+    border-radius: 5%;
+    text-align: left;
+    width: auto;
+    margin: 12px 0px 0px 32px;
+    padding-left: 20px;
+}
+
+.list_none {
+    list-style: none;
+}
+
+.categorias {
+    font-size: 18px;
+    display: inline-block;
+    width: 20%;
+    height: 1000px;
+    vertical-align: bottom;
+    float: left;
+}
+
+.produtos {
+    height: 1000px;
+    width: 79%;
+    display: inline-block;
+    color: black
+}
+
+.box_produto {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 5%;
+    text-align: center;
+    width: 20%;
+    margin: 12px 0px 0px 32px;
+    box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.6);
+}
+
+.preco {
+    color: red;
+    font-weight: bold;
+}
+
+#cursor {
+    cursor: pointer;
+}
