@@ -17,7 +17,7 @@ if (isset($_POST['nome']) && isset($_POST['prod']) && isset($_POST['quant']) && 
     $nome = $_POST['nome'];
     $prod = $_POST['prod'];
     $quant = $_POST['quant'];
-    $ende = $_POST['endereco'];
+    $endereco = $_POST['endereco'];
     $sql = "insert into pedidos (nome_cliente, nome_produto, quantidade, endereco) values('$nome','$prod','$quant','$endereco')";
     $result = $conn->query($sql);
 }
