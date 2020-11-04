@@ -40,9 +40,10 @@ primary key (id));
 
 -- CRIAÇÃO DA TABELA PEDIDOS
 
-CREATE TABLE pedidos (
-id INT AUTO_INCREMENT,
-nome VARCHAR(100),
-msg VARCHAR(300),
-data DATETIME DEFAULT now(),
-primary key (id));
+CREATE TABLE pedidos ( 
+idpedido INT AUTO_INCREMENT, 
+nome_cliente VARCHAR(50) NOT NULL, 
+nome_produto VARCHAR(200) NOT NULL,
+endereco VARCHAR(150) NOT NULL,
+quantidade INT NOT NULL,
+PRIMARY KEY (idpedido));
