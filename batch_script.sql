@@ -15,7 +15,7 @@ imagem VARCHAR(255),
 PRIMARY KEY (idproduto)
 )AUTO_INCREMENT = 100;
 
-INSERT INTO produtos (idproduto, categoria, descricao, preco, precofinal, imagem)
+INSERT INTO produtos (categoria, descricao, preco, precofinal, imagem)
 VALUES ("geladeira", "Geladeira Frost Free Brastemp Side Inverse 540 Litros", "6389.00", "5019.00", "imagens/produtos/geladeira_brastemp_2.png"),
 ("geladeira", "Geladeira Frost Free Brastemp Branca 375 Litros", "2086.00", "1910.00", "imagens/produtos/geladeira_brastemp.png"),
 ("geladeira", "Geladeira Frost Free Consul Prata 340 Litros", "2199.90", "2069.00", "imagens/produtos/geladeira_consul.png"),
